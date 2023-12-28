@@ -128,21 +128,16 @@ h6 {
   text-transform: uppercase;
 }
 
-#header .logo a {
-  color: #fff;
-}
 
 #header .logo img {
   max-height: 60px;
-  position: absolute;
-  top:5%;
+
 }
 #academy img{
   width: 200px;
   position: absolute;
   left: 70%;
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -603,7 +598,9 @@ section {
   font-weight: 600;
   font-size: 26px;
 }
-
+.welcomecontent{
+  padding: 20px;
+}
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -625,6 +622,28 @@ section {
   font-size: 20px;
   color: #47b2e4;
   line-height: 1;
+}
+#contentAbout{
+  display: flex;
+  position: relative;
+}
+.academylogo{
+  position: absolute;
+  left: 80%;
+
+}
+.academylogo img{
+  max-width: 150px;
+  margin-bottom: 100px;
+}
+@media (max-width:530px){
+  .academylogo img {
+    width: 40px;
+    margin-top:220px;
+    margin-left:0px;
+
+
+}
 }
 
 .about .content p:last-child {
@@ -652,6 +671,7 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
 
 /*--------------------------------------------------------------
 # Why Us
