@@ -8,7 +8,7 @@
   --preloader:#37517e;
   --arrow:#e8edf5;
   --dark:#333;
-  --red:red;
+  --red:#D30000;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -304,7 +304,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: var(--preloader);
   transition: 0.3s;
   z-index: 999;
 }
@@ -333,13 +333,13 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: var(--preloader);
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #47b2e4;
+  color:var(--red);
 }
 
 .navbar-mobile .getstarted,
@@ -594,85 +594,25 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
-}
-.welcomecontent{
-  padding: 20px;
-}
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
-}
-
-.about .content ul li+li {
-  margin-top: 10px;
-}
-
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #47b2e4;
-  line-height: 1;
-}
-#contentAbout{
+.about{
   display: flex;
   position: relative;
+  width: 100%;
+  height: auto;
 }
-.academylogo{
-  position: absolute;
-  left: 80%;
 
+.content{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
 }
 .academylogo img{
-  max-width: 150px;
-  margin-bottom: 100px;
+  width: 140px;
+  align-items: center;
+  display: inline;
 }
-@media (max-width:530px){
-  .academylogo img {
-    width: 40px;
-    margin-top:220px;
-    margin-left:0px;
-
-
-}
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
-}
-
-.about .content .btn-learn-more {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 4px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #47b2e4;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #47b2e4;
-}
-
-.about .content .btn-learn-more:hover {
-  background: #47b2e4;
-  color: #fff;
-  text-decoration: none;
-}
-
-
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
