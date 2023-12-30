@@ -8,6 +8,7 @@
   --preloader:#37517e;
   --arrow:#e8edf5;
   --dark:#333;
+  --red:red;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -184,7 +185,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: var(--dark);
+  color: var(--red);
 }
 
 .navbar .getstarted,
@@ -200,7 +201,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: var(--dark);
-  background: var(--preloader);
+  background: var();
 }
 
 .navbar .dropdown ul {
