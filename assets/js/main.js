@@ -1,10 +1,3 @@
-/**
-* Template Name: Arsha
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -256,3 +249,20 @@
   });
 
 })()
+
+/** language part **/
+
+
+const drop_down = document.querySelector('.drop-down')
+
+const list_l = document.querySelector('.list')
+const selected = document.querySelector('.selected')
+const selectedImg = document.querySelector('.selectedImg')
+drop_down.addEventListener('click',()=>{
+  list_l.classList.toggle("show")
+})
+list_l.addEventListener('click',(e)=>{
+  const img = e.target.querySelector('.flag_img')
+  selectedImg.src = img.src;
+  selected.innerHTML = `<h1>Hello</h1>`
+})
