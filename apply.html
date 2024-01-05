@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Button</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1>Welcome to My Page</h1>
+    <p>This is a simple Bootstrap page with a Start button.</p>
+    <button class="btn btn-primary">Start</button>
+  </div>
+  <script>
+    function startExam() {
+        var checkbox = document.getElementById('statementexam');
+        
+        if (checkbox.checked) {
+            window.location.href = "{% url 'index' %}"; // Doğrulama başarılı, sayfayı yönlendir.
+        } else {
+            alert("İmtahan şərtlərini qəbul etmək üçün checkboxu işarələyin."); // Doğrulama başarısız, uyarı mesajı göster.
+        }
+    }
+</script>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- ... (modal içeriği) ... -->
+    <div class="modal-body">
+        <!-- ... (modal içeriği) ... -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="statementexam" required>
+            <label class="form-check-label" for="defaultCheck1">
+                İmtahan şərtlərini oxudum, razıyam və imtahana hazıram
+            </label>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary btn-lg active" role="button" aria-pressed="true" onclick="startExam()">Start</button>
+    </div>
+</div>
+
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap dropdowns) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
