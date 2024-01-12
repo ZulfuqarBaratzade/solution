@@ -253,10 +253,9 @@
 /** language part **/
 
 
-const drop_down = document.querySelector('.drop-down')
+const drop_down = document.querySelector('#language')
 
-const list_l = document.querySelector('.list')
-const selected = document.querySelector('.selected')
+const list_l = document.querySelector('#list_')
 const selectedImg = document.querySelector('.selectedImg')
 drop_down.addEventListener('click',()=>{
   list_l.classList.toggle("show")
@@ -264,5 +263,4 @@ drop_down.addEventListener('click',()=>{
 list_l.addEventListener('click',(e)=>{
   const img = e.target.querySelector('.flag_img')
   selectedImg.src = img.src;
-  selected.innerHTML = `<h1>Hello</h1>`
 })
